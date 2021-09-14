@@ -33,6 +33,7 @@
         background-color: white;
         padding: 20px 15px;
         border-radius: 0 0 15px 15px;
+        display: flex;
 
         span {
             color: $newtag;
@@ -43,5 +44,10 @@
             top: 15px;
             right: 15px;
         }
+
+        div:last-child {
+            margin: auto 0 auto auto;
+        }
     }
 }
+

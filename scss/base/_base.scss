@@ -18,6 +18,11 @@ h1, h2 {
     @include heading-padding;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 // Layout 
 
 .container {

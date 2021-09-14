@@ -21,15 +21,15 @@ header {
 .header__text {
     @include section-padding;
     background-color: $gray;
-    padding-left: 11%;
-    padding-right: 11%;
+    padding-left: 9%;
+    padding-right: 9%;
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-bottom: 1.5rem;
     }
 }

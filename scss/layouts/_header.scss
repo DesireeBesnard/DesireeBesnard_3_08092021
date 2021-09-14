@@ -1,0 +1,35 @@
+header {
+    text-align: center;
+}
+
+.header__logo {
+    display: block;
+
+    img {
+        width: 165px;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    + div {
+        background-color: $grey;
+        margin: 0;
+        padding: 1rem 0;
+    }
+}
+
+.header__text {
+    @include section-padding;
+    background-color: $gray;
+    padding-left: 11%;
+    padding-right: 11%;
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        padding-bottom: 1.5rem;
+    }
+}

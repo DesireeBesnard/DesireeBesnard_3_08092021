@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_functions.scss",
+        "utils/_mixins.scss",
+        "utils/_placeholders.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "components/_button.scss",
+        "layouts/_header.scss",
+        "layouts/_nav.scss",
+        "layouts/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

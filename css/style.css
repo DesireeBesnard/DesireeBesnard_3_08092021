@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+html, body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-heading {
+  font-family: "Shrikhand", cursive;
+}
+
+h1, h2 {
+  padding-bottom: 1.5rem;
+}
+
+.container {
+  padding: 0 4%;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.header__btn {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  transition: all 200ms ease-in-out;
+}
+
+.header__btn:hover {
+  opacity: 0.8;
+}
+
+header {
+  text-align: center;
+}
+
+.header__logo {
+  display: block;
+}
+.header__logo img {
+  width: 165px;
+  height: auto;
+  padding: 1rem 0;
+}
+.header__logo + div {
+  background-color: #EAEAEA;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.header__text {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #F6F6F6;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+.header__text h1 {
+  font-size: 1.8rem;
+}
+.header__text p {
+  font-size: 1.1rem;
+  padding-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -42,6 +42,7 @@ section {
 
 .header__btn:hover {
   opacity: 0.8;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .heart {
@@ -110,14 +111,19 @@ header {
   padding-bottom: 1.5rem;
 }
 
+.description {
+  padding-left: 4%;
+  padding-right: 4%;
+}
 .description__step {
   display: flex;
   align-items: center;
   background-color: #F6F6F6;
   max-width: 75%;
   margin-left: auto;
+  margin-right: auto;
   margin-bottom: 25px;
-  padding: 25px 40px;
+  padding: 25px 30px;
   border-radius: 20px;
   position: relative;
   font-size: 1.2rem;
@@ -158,7 +164,7 @@ header {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
   grid-gap: 20px;
 }
 
@@ -169,7 +175,7 @@ header {
   box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .card__thumbnail {
-  height: 175px;
+  height: 150px;
 }
 .card__thumbnail img {
   width: 100%;
@@ -179,14 +185,14 @@ header {
 }
 .card__details {
   background-color: white;
-  padding: 20px 15px;
+  padding: 20px 25px 20px 15px;
   border-radius: 0 0 15px 15px;
   display: flex;
 }
 .card__details span {
   color: #008766;
   background-color: #99E2D0;
-  padding: 10px 13px;
+  padding: 8px 13px;
   border-radius: 3px;
   position: absolute;
   top: 15px;
@@ -194,6 +200,31 @@ header {
 }
 .card__details div:last-child {
   margin: auto 0 auto auto;
+}
+
+footer {
+  padding: 1.5rem 4%;
+  background-color: #353535;
+  color: white;
+}
+footer img {
+  width: 100px;
+  height: auto;
+  filter: invert(1);
+  margin-bottom: 1rem;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer i {
+  width: 20px;
+  margin-right: 0.625rem;
+}
+
+.footer__link {
+  padding-bottom: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@
 
 .cards {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(335px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(294px, 1fr) );
     grid-gap: 20px;
 }
 
@@ -19,7 +19,7 @@
     @include box-shadow;
 
     &__thumbnail {
-        height: 175px;
+        height: 150px;
         
         img {
             width: 100%;
@@ -31,14 +31,14 @@
 
     &__details {
         background-color: white;
-        padding: 20px 15px;
+        padding: 20px 25px 20px 15px;
         border-radius: 0 0 15px 15px;
         display: flex;
 
         span {
             color: $newtag;
             background-color: $mint;
-            padding: 10px 13px;
+            padding: 8px 13px;
             border-radius: 3px;
             position: absolute;
             top: 15px;

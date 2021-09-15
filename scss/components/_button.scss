@@ -16,37 +16,43 @@
 }
 
 .heart {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     padding: 0;
     border: 1px solid black;
     border-top-color: transparent;
-    border-left-color: transparent;
+    border-right-color: transparent;
     background-color: transparent;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     position: relative;
 
     &::before, &::after {
         content: "";
-        width: 15px;
-        height: 15px;
+        width: 16px;
+        height: 16px;
         box-sizing: border-box;
         position: absolute;
         border-radius: 50%;
         border: 1px solid black;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
+        border-left-color: transparent;
+        background-color: transparent;
     }
 
     &::before {
         top: -1px;
-        left: -7px;
-        transform: rotate(-50deg);
+        transform: rotate(-42deg);
+        border-bottom-color: black;
+        border-top-color: transparent;
     }
 
     &::after {
-        top: -7px;
+        top: -9px;
         left: -1px;
-        transform: rotate(50deg);
+        transform: rotate(-48deg);
+        border-bottom-color: transparent;
     }
+}
+
+.heart:hover {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }

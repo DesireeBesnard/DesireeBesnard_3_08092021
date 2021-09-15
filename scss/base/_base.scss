@@ -21,6 +21,10 @@ a {
     padding: 0 4%;
 }
 
-section {
-    @include section-padding;
+.index-section {
+    @include index-section-padding;
+}
+
+section:not(.index-section) {
+    padding-bottom: 2.45rem;
 }

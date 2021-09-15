@@ -1,0 +1,42 @@
+.menu {
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: -35px;
+
+    > div:first-child {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin-left: auto;
+        }
+    }
+
+    &__bg {
+        background-color: $gray;
+    }
+
+    &__heading {
+        padding-top: 30px;
+        font-size: 1.7rem;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        position: relative;
+    }
+
+    h2:after {
+        content:"";
+        height: 3px;
+        width: 40px;
+        background-color:$tertiary;
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+    }
+}

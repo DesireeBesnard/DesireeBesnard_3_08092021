@@ -19,12 +19,16 @@ a {
   padding: 0 4%;
 }
 
-section {
+.index-section {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.menu-heading {
+section:not(.index-section) {
+  padding-bottom: 2.45rem;
+}
+
+.heading-font {
   font-family: "Shrikhand", cursive;
 }
 
@@ -52,7 +56,7 @@ section {
   border: 1px solid black;
   border-top-color: transparent;
   border-left-color: transparent;
-  background-color: white;
+  background-color: transparent;
   transform: rotate(45deg);
   position: relative;
 }
@@ -118,6 +122,16 @@ header {
 
 .backarrow {
   position: absolute;
+  top: 23px;
+  left: 20px;
+}
+.backarrow + div {
+  height: 255px;
+}
+.backarrow + div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .description {
@@ -198,12 +212,12 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 .card__details {
   background-color: white;
   padding: 20px 25px 20px 15px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
 }
 .card__details span {
   color: #008766;
@@ -216,6 +230,43 @@ header {
 }
 .card__details div:last-child {
   margin: auto 0 auto auto;
+}
+
+.menu {
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  top: -35px;
+}
+.menu > div:first-child {
+  display: flex;
+  align-items: center;
+}
+.menu > div:first-child button {
+  margin-left: auto;
+}
+.menu__bg {
+  background-color: #F6F6F6;
+}
+.menu__heading {
+  padding-top: 30px;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.menu h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  position: relative;
+}
+.menu h2:after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: 18px;
+  left: 0;
 }
 
 footer {

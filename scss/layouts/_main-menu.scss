@@ -39,4 +39,37 @@
         bottom: 18px;
         left: 0;
     }
+
+    &__dishes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+        grid-gap: 20px;
+    }
+
+    &__dish {
+        background-color: white;
+        padding: 10px 20px 10px 10px;
+        border-radius: 15px;
+        @include box-shadow;
+    }
+}
+
+.dish__name {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.dish__details {
+    display: flex;
+    align-items: center;
+
+    p:first-child {
+        font-weight: lighter;
+        font-size: 0.9rem;
+    }
+
+    p:last-child {
+        margin-left: auto;
+        font-weight: bold;
+    }
 }

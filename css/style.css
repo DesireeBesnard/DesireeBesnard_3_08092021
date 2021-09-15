@@ -118,6 +118,7 @@ header {
 .header__text p {
   font-size: 1.2rem;
   padding-bottom: 1.5rem;
+  font-weight: lighter;
 }
 
 .backarrow {
@@ -142,14 +143,14 @@ header {
   display: flex;
   align-items: center;
   background-color: #F6F6F6;
-  max-width: 75%;
+  max-width: 76%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  padding: 25px 30px;
+  padding: 25px 26px;
   border-radius: 20px;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
   font-weight: bold;
 }
@@ -231,6 +232,9 @@ header {
 .card__details div:last-child {
   margin: auto 0 auto auto;
 }
+.card__details p {
+  font-weight: lighter;
+}
 
 .menu {
   padding-left: 4%;
@@ -267,6 +271,35 @@ header {
   position: absolute;
   bottom: 18px;
   left: 0;
+}
+.menu__dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+  grid-gap: 20px;
+}
+.menu__dish {
+  background-color: white;
+  padding: 10px 20px 10px 10px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dish__name {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.dish__details {
+  display: flex;
+  align-items: center;
+}
+.dish__details p:first-child {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+.dish__details p:last-child {
+  margin-left: auto;
+  font-weight: bold;
 }
 
 footer {

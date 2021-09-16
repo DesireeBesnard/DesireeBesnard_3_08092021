@@ -16,43 +16,21 @@
 }
 
 .heart {
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    border: 1px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
     background-color: transparent;
-    transform: rotate(-45deg);
-    position: relative;
+    border: none;
 
-    &::before, &::after {
-        content: "";
-        width: 16px;
-        height: 16px;
-        box-sizing: border-box;
-        position: absolute;
-        border-radius: 50%;
-        border: 1px solid black;
-        border-left-color: transparent;
-        background-color: transparent;
+    i {
+        display: inline;
+        position: relative;
+
+        &:hover {
+            font-weight: 800;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to top, #FF79DA, #9356DC);
+        }
     }
 
-    &::before {
-        top: -1px;
-        transform: rotate(-42deg);
-        border-bottom-color: black;
-        border-top-color: transparent;
-    }
-
-    &::after {
-        top: -9px;
-        left: -1px;
-        transform: rotate(-48deg);
-        border-bottom-color: transparent;
-    }
-}
-
-.heart:hover {
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    
 }

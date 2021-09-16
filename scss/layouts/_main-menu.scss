@@ -48,28 +48,57 @@
 
     &__dish {
         background-color: white;
-        padding: 10px 20px 10px 10px;
         border-radius: 15px;
         @include box-shadow;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &__dish:hover .menu__check {
+        animation: 300ms ease-out forwards slidein;
+    }
+
+    &__check {
+        background-color: $tertiary;
+        color: white;
+        width: 0%;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.dish__name {
-    font-weight: bold;
-    padding-bottom: 5px;
-}
+.dish {
+    padding: 10px 20px 10px 10px;
+    overflow: hidden;
+    width: 100%;
 
-.dish__details {
-    display: flex;
-    align-items: center;
-
-    p:first-child {
-        font-weight: lighter;
-        font-size: 0.9rem;
-    }
-
-    p:last-child {
-        margin-left: auto;
+    &__name {
         font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+
+        p:first-child {
+            font-weight: lighter;
+            font-size: 0.9rem;
+        }
+
+        p:last-child {
+            margin-left: auto;
+            font-weight: bold;
+        }
     }
 }
+
+.dish__name, .dish__details p:first-child {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+

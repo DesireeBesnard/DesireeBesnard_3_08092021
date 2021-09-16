@@ -28,6 +28,14 @@ section:not(.index-section) {
   padding-bottom: 2.45rem;
 }
 
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70px;
+  }
+}
 .heading-font {
   font-family: "Shrikhand", cursive;
 }
@@ -262,16 +270,34 @@ header {
 }
 .menu__dish {
   background-color: white;
-  padding: 10px 20px 10px 10px;
   border-radius: 15px;
   box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu__dish:hover .menu__check {
+  animation: 300ms ease-out forwards slidein;
+}
+.menu__check {
+  background-color: #99E2D0;
+  color: white;
+  width: 0%;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.dish {
+  padding: 10px 20px 10px 10px;
+  overflow: hidden;
+  width: 100%;
+}
 .dish__name {
   font-weight: bold;
   padding-bottom: 5px;
 }
-
 .dish__details {
   display: flex;
   align-items: center;
@@ -283,6 +309,12 @@ header {
 .dish__details p:last-child {
   margin-left: auto;
   font-weight: bold;
+}
+
+.dish__name, .dish__details p:first-child {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 footer {

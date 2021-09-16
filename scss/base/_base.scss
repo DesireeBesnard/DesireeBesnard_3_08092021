@@ -28,3 +28,14 @@ a {
 section:not(.index-section) {
     padding-bottom: 2.45rem;
 }
+
+// Animations
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70px;
+  }
+}

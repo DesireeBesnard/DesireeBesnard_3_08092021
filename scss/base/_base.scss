@@ -31,6 +31,17 @@ section:not(.index-section) {
 
 // Animations
 
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @keyframes checkturn {
   from {
     transform: rotate(90deg);

@@ -28,6 +28,16 @@ section:not(.index-section) {
   padding-bottom: 2.45rem;
 }
 
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @keyframes checkturn {
   from {
     transform: rotate(90deg);
@@ -260,12 +270,17 @@ header {
   font-size: 1.7rem;
   font-weight: normal;
 }
-.menu h2 {
+.menu__dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+  grid-gap: 20px;
+}
+.menu .section-heading {
   font-size: 1rem;
   font-weight: normal;
   position: relative;
 }
-.menu h2:after {
+.menu .section-heading:after {
   content: "";
   height: 3px;
   width: 40px;
@@ -274,15 +289,11 @@ header {
   bottom: 18px;
   left: 0;
 }
-.menu__dishes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
-  grid-gap: 20px;
-}
 .menu__dish {
   background-color: white;
   border-radius: 15px;
   box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -307,32 +318,47 @@ header {
   transform: rotate(90deg);
 }
 
-.dish {
+.item {
   padding: 10px 20px 10px 10px;
   overflow: hidden;
   width: 100%;
 }
-.dish__name {
+.item__name {
   font-weight: bold;
   padding-bottom: 5px;
 }
-.dish__details {
+.item__details {
   display: flex;
   align-items: center;
 }
-.dish__details p:first-child {
+.item__details p:first-child {
   font-weight: lighter;
   font-size: 0.9rem;
 }
-.dish__details p:last-child {
+.item__details p:last-child {
   margin-left: auto;
   font-weight: bold;
 }
 
-.dish__name, .dish__details p:first-child {
+.item__name, .item__details p:first-child {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.menu section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: 600ms ease-in-out forwards slideup;
+}
+.menu section:first-child {
+  animation-delay: 300ms;
+}
+.menu section:nth-child(2) {
+  animation-delay: 500ms;
+}
+.menu section:last-child {
+  animation-delay: 700ms;
 }
 
 footer {

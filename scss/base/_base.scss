@@ -31,15 +31,6 @@ section:not(.index-section) {
 
 // Animations
 
-@keyframes slidein {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 70px;
-  }
-}
-
 @keyframes checkturn {
   from {
     transform: rotate(90deg);

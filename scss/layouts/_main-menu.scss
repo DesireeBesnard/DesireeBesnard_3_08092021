@@ -56,10 +56,10 @@
     }
 
     &__dish:hover .menu__check {
-        animation: 400ms ease-out forwards slidein;
+        width: 70px;
     }
 
-    &__dish:hover .menu__check i {
+    &__dish:hover i {
         animation: 200ms ease-out 200ms forwards checkturn;
     }
 
@@ -71,6 +71,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: width 300ms ease-in-out;
 
         & i {
             transform: rotate(90deg);

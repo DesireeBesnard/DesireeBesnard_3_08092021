@@ -28,14 +28,6 @@ section:not(.index-section) {
   padding-bottom: 2.45rem;
 }
 
-@keyframes slidein {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 70px;
-  }
-}
 @keyframes checkturn {
   from {
     transform: rotate(90deg);
@@ -296,9 +288,9 @@ header {
   overflow: hidden;
 }
 .menu__dish:hover .menu__check {
-  animation: 400ms ease-out forwards slidein;
+  width: 70px;
 }
-.menu__dish:hover .menu__check i {
+.menu__dish:hover i {
   animation: 200ms ease-out 200ms forwards checkturn;
 }
 .menu__check {
@@ -309,6 +301,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: width 300ms ease-in-out;
 }
 .menu__check i {
   transform: rotate(90deg);

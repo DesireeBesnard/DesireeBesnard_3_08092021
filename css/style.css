@@ -36,6 +36,14 @@ section:not(.index-section) {
     width: 70px;
   }
 }
+@keyframes checkturn {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .heading-font {
   font-family: "Shrikhand", cursive;
 }
@@ -277,7 +285,10 @@ header {
   overflow: hidden;
 }
 .menu__dish:hover .menu__check {
-  animation: 300ms ease-out forwards slidein;
+  animation: 400ms ease-out forwards slidein;
+}
+.menu__dish:hover .menu__check i {
+  animation: 200ms ease-out 200ms forwards checkturn;
 }
 .menu__check {
   background-color: #99E2D0;
@@ -287,6 +298,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu__check i {
+  transform: rotate(90deg);
 }
 
 .dish {

@@ -18,19 +18,34 @@
 .heart {
     background-color: transparent;
     border: none;
+    position: relative;
 
-    i {
-        display: inline;
-        position: relative;
+    & svg {
+        width: 20px;
+        overflow: visible;
+    }
 
-        &:hover {
-            font-weight: 800;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(to top, #FF79DA, #9356DC);
+    &--fill {
+        .gradientstop1 {
+            stop-color: $primary;
+        }
+
+        .gradientstop2 {
+            stop-color: $secondary;
         }
     }
 
-    
+    &--outline {
+        stroke: black;
+        fill:white;
+        position: absolute;
+        left: 6px;
+        top: 1px;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
 }

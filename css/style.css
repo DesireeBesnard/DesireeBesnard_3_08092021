@@ -68,17 +68,28 @@ section:not(.index-section) {
 .heart {
   background-color: transparent;
   border: none;
-}
-.heart i {
-  display: inline;
   position: relative;
 }
-.heart i:hover {
-  font-weight: 800;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+.heart svg {
+  width: 20px;
+  overflow: visible;
+}
+.heart--fill .gradientstop1 {
+  stop-color: #9356DC;
+}
+.heart--fill .gradientstop2 {
+  stop-color: #FF79DA;
+}
+.heart--outline {
+  stroke: black;
+  fill: white;
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  transition: opacity 300ms ease-in-out;
+}
+.heart--outline:hover {
+  opacity: 0;
 }
 
 header {

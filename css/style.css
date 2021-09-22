@@ -39,10 +39,13 @@ section:not(.index-section) {
   }
 }
 @keyframes checkturn {
-  from {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
     transform: rotate(90deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -302,7 +305,7 @@ header {
   width: 70px;
 }
 .menu__dish:hover i {
-  animation: 200ms ease-out 200ms forwards checkturn;
+  animation: 200ms ease-out 100ms forwards checkturn;
 }
 .menu__check {
   background-color: #99E2D0;
@@ -313,9 +316,6 @@ header {
   justify-content: center;
   align-items: center;
   transition: width 300ms ease-in-out;
-}
-.menu__check i {
-  transform: rotate(90deg);
 }
 
 .item {

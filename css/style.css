@@ -76,7 +76,7 @@ section:not(.index-section) {
   position: relative;
 }
 .heart svg {
-  width: 20px;
+  width: 25px;
   overflow: visible;
 }
 .heart--fill .gradientstop1 {
@@ -85,15 +85,26 @@ section:not(.index-section) {
 .heart--fill .gradientstop2 {
   stop-color: #FF79DA;
 }
-.heart--outline {
+.heart--outline-white {
   stroke: black;
   fill: white;
   position: absolute;
   left: 6px;
   top: 1px;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
-.heart--outline:hover {
+.heart--outline-white:hover {
+  opacity: 0;
+}
+.heart--outline-gray {
+  stroke: black;
+  fill: #F6F6F6;
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  transition: opacity 200ms ease-in-out;
+}
+.heart--outline-gray:hover {
   opacity: 0;
 }
 
@@ -211,8 +222,8 @@ header {
 }
 .cards__button {
   position: absolute;
-  right: 30px;
-  bottom: 35px;
+  right: 20px;
+  bottom: 30px;
 }
 
 .card {
@@ -359,6 +370,11 @@ header {
 }
 .menu section:last-child {
   animation-delay: 700ms;
+}
+
+.menu .header__btn {
+  display: block;
+  margin: auto;
 }
 
 footer {

@@ -382,11 +382,14 @@ footer {
   background-color: #353535;
   color: white;
 }
+footer > a {
+  display: block;
+  margin-bottom: 1rem;
+}
 footer img {
   width: 100px;
   height: auto;
   filter: invert(1);
-  margin-bottom: 1rem;
 }
 footer ul {
   margin: 0;
@@ -400,6 +403,55 @@ footer i {
 
 .footer__link {
   padding-bottom: 0.6rem;
+}
+
+@media only screen and (min-width: 688px) and (max-width: 991.98px) {
+  .description__step {
+    max-width: 50%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+  }
+  footer > a {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .index-section.description > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description__step {
+    width: 24%;
+    max-width: 24%;
+  }
+
+  footer, ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer > a, ul > a {
+    margin-bottom: 0;
+  }
+  footer ul, ul ul {
+    width: 70%;
+  }
+  footer .footer__link, ul .footer__link {
+    margin-left: 30px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

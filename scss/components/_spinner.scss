@@ -25,15 +25,18 @@
         transform: translate(-50%, -27%);
 
         &-1 {
-            animation: dot-1-move 2s ease infinite;
+            background-color: $primary;
+            animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
         }
 
         &-2 {
-            animation: dot-2-move 2s ease infinite;
+            background-color: $secondary;
+            animation: dot-2-move 2s ease infinite, z-index 6s 2s ease infinite;
         }
 
         &-3 {
-            animation: dot-3-move 2s ease infinite;
+            background-color: $tertiary;
+            animation: dot-3-move 2s ease infinite, z-index 6s 4s ease infinite;
         }
     }
 }

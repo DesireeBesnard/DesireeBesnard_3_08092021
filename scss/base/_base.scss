@@ -99,3 +99,18 @@ section:not(.index-section) {
     transform: translate(-50%, -27%) scale(1);
   }
 }
+
+@keyframes z-index {
+  0% {
+    z-index: 1;
+  }
+  33% {
+    z-index: 2;
+  }
+  66% {
+    z-index: 3;
+  }
+  100% {
+    z-index: 1;
+  }
+}

@@ -91,6 +91,20 @@ section:not(.index-section) {
     transform: translate(-50%, -27%) scale(1);
   }
 }
+@keyframes z-index {
+  0% {
+    z-index: 1;
+  }
+  33% {
+    z-index: 2;
+  }
+  66% {
+    z-index: 3;
+  }
+  100% {
+    z-index: 1;
+  }
+}
 .heading-font {
   font-family: "Shrikhand", cursive;
 }
@@ -176,13 +190,16 @@ section:not(.index-section) {
   transform: translate(-50%, -27%);
 }
 .spinner .dot-1 {
-  animation: dot-1-move 2s ease infinite;
+  background-color: #9356DC;
+  animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
 }
 .spinner .dot-2 {
-  animation: dot-2-move 2s ease infinite;
+  background-color: #FF79DA;
+  animation: dot-2-move 2s ease infinite, z-index 6s 2s ease infinite;
 }
 .spinner .dot-3 {
-  animation: dot-3-move 2s ease infinite;
+  background-color: #99E2D0;
+  animation: dot-3-move 2s ease infinite, z-index 6s 4s ease infinite;
 }
 
 header {

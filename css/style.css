@@ -49,6 +49,48 @@ section:not(.index-section) {
     transform: rotate(360deg);
   }
 }
+@keyframes dot-1-move {
+  0% {
+    transform: translate(-50%, -27%);
+  }
+  15% {
+    transform: translate(-13%, 0%);
+  }
+  60% {
+    transform: translate(50%, 50%);
+  }
+  100% {
+    transform: translate(-50%, -27%);
+  }
+}
+@keyframes dot-2-move {
+  0% {
+    transform: translate(-50%, -27%);
+  }
+  15% {
+    transform: translate(-90%, 0%);
+  }
+  60% {
+    transform: translate(-150%, 50%);
+  }
+  100% {
+    transform: translate(-50%, -27%);
+  }
+}
+@keyframes dot-3-move {
+  0% {
+    transform: translate(-50%, -27%);
+  }
+  15% {
+    transform: translate(-50%, -70%);
+  }
+  60% {
+    transform: translate(-50%, -150%);
+  }
+  100% {
+    transform: translate(-50%, -27%);
+  }
+}
 .heading-font {
   font-family: "Shrikhand", cursive;
 }
@@ -116,7 +158,6 @@ section:not(.index-section) {
   z-index: 1;
 }
 .spinner__container {
-  background-color: blue;
   position: absolute;
   width: 12rem;
   height: 12rem;
@@ -132,16 +173,16 @@ section:not(.index-section) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -27%);
 }
 .spinner .dot-1 {
-  transform: translate(50%, 50%);
+  animation: dot-1-move 2s ease infinite;
 }
 .spinner .dot-2 {
-  transform: translate(-150%, 50%);
+  animation: dot-2-move 2s ease infinite;
 }
 .spinner .dot-3 {
-  transform: translate(-50%, -150%);
+  animation: dot-3-move 2s ease infinite;
 }
 
 header {

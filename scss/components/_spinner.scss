@@ -6,7 +6,6 @@
     z-index: 1;
 
     &__container {
-        background-color: blue;
         position: absolute;
         width: 12rem;
         height: 12rem;
@@ -23,18 +22,18 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -27%);
 
         &-1 {
-            transform: translate(50%, 50%);
+            animation: dot-1-move 2s ease infinite;
         }
 
         &-2 {
-            transform: translate(-150%, 50%);
+            animation: dot-2-move 2s ease infinite;
         }
 
         &-3 {
-            transform: translate(-50%, -150%);
+            animation: dot-3-move 2s ease infinite;
         }
     }
 }

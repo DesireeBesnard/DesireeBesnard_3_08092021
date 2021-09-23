@@ -108,6 +108,42 @@ section:not(.index-section) {
   opacity: 0;
 }
 
+.spinner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+}
+.spinner__container {
+  background-color: blue;
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner .dot {
+  width: 4rem;
+  height: 4rem;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner .dot-1 {
+  transform: translate(50%, 50%);
+}
+.spinner .dot-2 {
+  transform: translate(-150%, 50%);
+}
+.spinner .dot-3 {
+  transform: translate(-50%, -150%);
+}
+
 header {
   text-align: center;
   position: relative;

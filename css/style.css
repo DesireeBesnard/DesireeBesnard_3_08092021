@@ -105,6 +105,17 @@ section:not(.index-section) {
     z-index: 1;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .heading-font {
   font-family: "Shrikhand", cursive;
 }
@@ -178,6 +189,7 @@ section:not(.index-section) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: rotate 2s ease infinite;
 }
 .spinner .dot {
   width: 4rem;

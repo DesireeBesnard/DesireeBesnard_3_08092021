@@ -330,6 +330,7 @@ header {
   justify-content: center;
   align-items: center;
   transition: width 300ms ease-in-out;
+  cursor: pointer;
 }
 
 .item {

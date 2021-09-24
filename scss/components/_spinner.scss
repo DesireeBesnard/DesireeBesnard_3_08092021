@@ -9,10 +9,12 @@
         position: absolute;
         width: 12rem;
         height: 12rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: rotate 2s ease infinite;
+        left: 0; 
+        right: 0; 
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        animation: rotate 3s ease infinite;
     }
 
     .dot {
@@ -27,17 +29,17 @@
 
         &-1 {
             background-color: $primary;
-            animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
+            animation: dot-1-move 3s ease infinite, z-index 9s ease infinite;
         }
 
         &-2 {
             background-color: $secondary;
-            animation: dot-2-move 2s ease infinite, z-index 6s 2s ease infinite;
+            animation: dot-2-move 3s ease infinite, z-index 9s 3s ease infinite;
         }
 
         &-3 {
             background-color: $tertiary;
-            animation: dot-3-move 2s ease infinite, z-index 6s 4s ease infinite;
+            animation: dot-3-move 3s ease infinite, z-index 9s 6s ease infinite;
         }
     }
 }

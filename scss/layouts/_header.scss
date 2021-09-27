@@ -49,15 +49,29 @@ header {
     position: absolute;
     top: 23px;
     left: 20px;
-
-    + div {
-
-        height: 255px;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
 }
+
+.banner {
+    height: 15.9rem;
+    position: absolute;
+    width: 100%;
+    z-index:-1;
+    background-size: cover;
+    background-position: center;
+}
+
+.lapalettedugout {
+    background-image: url(../../src/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}   
+
+.alafrancaise {
+    background-image: url(../../src/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}   
+
+.lanoteenchantee {
+    background-image: url(../../src/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);  
+}   
+
+.ledelicedessens {
+    background-image: url(../../src/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);   
+}   

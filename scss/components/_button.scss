@@ -33,6 +33,10 @@
         .gradientstop2 {
             stop-color: $secondary;
         }
+
+        path {
+            fill: url(#heart__gradient);
+        }
     }
 
     &--outline-white {

@@ -1,3 +1,12 @@
+// fonts 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+
+.heading-font {
+    font-family: 'Shrikhand', cursive;
+}
+
+// Css reset
+
 html, body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
@@ -27,153 +36,4 @@ a {
 
 section:not(.index-section) {
     padding-bottom: 2.45rem;
-}
-
-// Animations
-
-@keyframes slideup {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes checkturn {
-  0% {
-    transform: rotate(0deg);
-  }
-  1% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes dot-1-move {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  20% {
-    transform: translate(-34%, -29%) scale(0.45);
-  }
-  40% {
-    transform: translate(-16%, -12%) scale(0.45);
-  }
-  60% {
-    transform: translate(-16%, -12%) scale(0.45);
-  }
-  80% {
-    transform: translate(-34%, -29%) scale(0.45);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@keyframes dot-2-move {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  20% {
-    transform: translate(-68%, -29%) scale(0.45);
-  }
-  40% {
-    transform: translate(-78%, -13%) scale(0.45);
-  }
-  60% {
-    transform: translate(-78%, -13%) scale(0.45);
-  }
-  80% {
-    transform: translate(-68%, -29%) scale(0.45);
-  }
-  100%{
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@keyframes dot-3-move {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  20% {
-    transform: translate(-50%, -70%) scale(0.45);
-  }
-  40% {
-    transform: translate(-50%, -90%) scale(0.45);
-  }
-  60% {
-    transform: translate(-50%, -90%) scale(0.45);
-  }
-  80% {
-    transform: translate(-50%, -70%) scale(0.45);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@keyframes z-index {
-  0% {
-    z-index: 1;
-  }
-  33% {
-    z-index: 2;
-  }
-  66% {
-    z-index: 3;
-  }
-  100% {
-    z-index: 1;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  40% {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-// @keyframes loading-spinner {
-//   0% {
-//     display: block;
-//     opacity: 1;
-//   }
-//   90% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//     display: none;
-//   }
-// }
-
-@keyframes loading-spinner {
-  0% {
-    visibility: hidden;
-  }
-  1%{
-    visibility: visible;
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden
-  }
 }

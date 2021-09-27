@@ -1,33 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-html, body, h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-h1, h2 {
-  padding-bottom: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
-  padding: 0 4%;
-}
-
-.index-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-section:not(.index-section) {
-  padding-bottom: 2.45rem;
-}
-
 @keyframes slideup {
   from {
     opacity: 0;
@@ -157,6 +128,78 @@ section:not(.index-section) {
   font-family: "Shrikhand", cursive;
 }
 
+html, body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  padding-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 0 4%;
+}
+
+.index-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+section:not(.index-section) {
+  padding-bottom: 2.45rem;
+}
+
+.spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  visibility: hidden;
+  animation: loading-spinner 3s forwards ease;
+}
+.spinner__container {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation: rotate 2s ease infinite;
+}
+.spinner .dot {
+  width: 4rem;
+  height: 4rem;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner .dot-1 {
+  background-color: #9356DC;
+  animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
+}
+.spinner .dot-2 {
+  background-color: #FF79DA;
+  animation: dot-2-move 2s ease infinite, z-index 6s 2s ease infinite;
+}
+.spinner .dot-3 {
+  background-color: #99E2D0;
+  animation: dot-3-move 2s ease infinite, z-index 6s 4s ease infinite;
+}
+
 .header__btn {
   padding: 15px 25px;
   border-radius: 30px;
@@ -213,49 +256,6 @@ section:not(.index-section) {
 }
 .heart--outline-gray:hover {
   opacity: 0;
-}
-
-.spinner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 1;
-  visibility: hidden;
-  animation: loading-spinner 3s forwards ease;
-}
-.spinner__container {
-  position: absolute;
-  width: 8rem;
-  height: 8rem;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  animation: rotate 2s ease infinite;
-}
-.spinner .dot {
-  width: 4rem;
-  height: 4rem;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.spinner .dot-1 {
-  background-color: #9356DC;
-  animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
-}
-.spinner .dot-2 {
-  background-color: #FF79DA;
-  animation: dot-2-move 2s ease infinite, z-index 6s 2s ease infinite;
-}
-.spinner .dot-3 {
-  background-color: #99E2D0;
-  animation: dot-3-move 2s ease infinite, z-index 6s 4s ease infinite;
 }
 
 header {

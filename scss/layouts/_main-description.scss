@@ -1,7 +1,9 @@
+// Description section
+
 .description {
     padding-left: 4%;
     padding-right: 4%;
-
+  
     &__step {
         display: flex;
     align-items: center;
@@ -16,7 +18,7 @@
     font-size: 1rem;
     @include box-shadow;
     font-weight: bold;
-
+  
         span {
             background-color: $primary;
             width: 30px;
@@ -29,18 +31,18 @@
             position: absolute;
             left: -15px;
         }
-
+  
         i {
             margin-right: 25px;
             font-size: 1.5rem;
         }
     }
-}
-
-.fa-mobile-alt, .fa-list-ul {
+  }
+  
+  .fa-mobile-alt, .fa-list-ul {
     color: #7E7E7E;
-}
-
-.fa-store {
+  }
+  
+  .fa-store {
     color: $primary;
-}
+  }

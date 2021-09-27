@@ -139,6 +139,10 @@ section:not(.index-section) {
 }
 @keyframes loading-spinner {
   0% {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
     opacity: 1;
   }
   90% {
@@ -146,7 +150,7 @@ section:not(.index-section) {
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 .heading-font {
@@ -214,6 +218,7 @@ section:not(.index-section) {
   height: 100vh;
   background-color: white;
   z-index: 1;
+  visibility: hidden;
   animation: loading-spinner 3s forwards ease;
 }
 .spinner__container {

@@ -4,6 +4,7 @@
     height: 100vh;
     background-color: white;
     z-index: 1;
+    visibility: hidden;
     animation: loading-spinner 3s forwards ease ;
 
     &__container {

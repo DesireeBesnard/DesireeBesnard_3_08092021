@@ -51,62 +51,62 @@ section:not(.index-section) {
 }
 @keyframes dot-1-move {
   0% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   20% {
-    transform: translate(-13%, 0%) scale(0.45);
+    transform: translate(-34%, -29%) scale(0.45);
   }
   40% {
-    transform: translate(50%, 50%) scale(0.45);
+    transform: translate(-16%, -12%) scale(0.45);
   }
   60% {
-    transform: translate(50%, 50%) scale(0.45);
+    transform: translate(-16%, -12%) scale(0.45);
   }
   80% {
-    transform: translate(-13%, 0%) scale(0.45);
+    transform: translate(-34%, -29%) scale(0.45);
   }
   100% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 @keyframes dot-2-move {
   0% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   20% {
-    transform: translate(-90%, 0%) scale(0.45);
+    transform: translate(-68%, -29%) scale(0.45);
   }
   40% {
-    transform: translate(-150%, 50%) scale(0.45);
+    transform: translate(-78%, -13%) scale(0.45);
   }
   60% {
-    transform: translate(-150%, 50%) scale(0.45);
+    transform: translate(-78%, -13%) scale(0.45);
   }
   80% {
-    transform: translate(-90%, 0%) scale(0.45);
+    transform: translate(-68%, -29%) scale(0.45);
   }
   100% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 @keyframes dot-3-move {
   0% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   20% {
     transform: translate(-50%, -70%) scale(0.45);
   }
   40% {
-    transform: translate(-50%, -150%) scale(0.45);
+    transform: translate(-50%, -90%) scale(0.45);
   }
   60% {
-    transform: translate(-50%, -150%) scale(0.45);
+    transform: translate(-50%, -90%) scale(0.45);
   }
   80% {
     transform: translate(-50%, -70%) scale(0.45);
   }
   100% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 @keyframes z-index {
@@ -135,6 +135,18 @@ section:not(.index-section) {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes loading-spinner {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 .heading-font {
@@ -202,17 +214,18 @@ section:not(.index-section) {
   height: 100vh;
   background-color: white;
   z-index: 1;
+  animation: loading-spinner 3s forwards ease;
 }
 .spinner__container {
   position: absolute;
-  width: 12rem;
-  height: 12rem;
+  width: 8rem;
+  height: 8rem;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
-  animation: rotate 3s ease infinite;
+  animation: rotate 2s ease infinite;
 }
 .spinner .dot {
   width: 4rem;
@@ -222,19 +235,19 @@ section:not(.index-section) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -27%);
+  transform: translate(-50%, -50%);
 }
 .spinner .dot-1 {
   background-color: #9356DC;
-  animation: dot-1-move 3s ease infinite, z-index 9s ease infinite;
+  animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
 }
 .spinner .dot-2 {
   background-color: #FF79DA;
-  animation: dot-2-move 3s ease infinite, z-index 9s 3s ease infinite;
+  animation: dot-2-move 2s ease infinite, z-index 6s 2s ease infinite;
 }
 .spinner .dot-3 {
   background-color: #99E2D0;
-  animation: dot-3-move 3s ease infinite, z-index 9s 6s ease infinite;
+  animation: dot-3-move 2s ease infinite, z-index 6s 4s ease infinite;
 }
 
 header {

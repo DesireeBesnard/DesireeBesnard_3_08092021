@@ -56,64 +56,64 @@ section:not(.index-section) {
 
 @keyframes dot-1-move {
   0% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   20% {
-    transform: translate(-13%, 0%) scale(0.45);
+    transform: translate(-34%, -29%) scale(0.45);
   }
   40% {
-    transform: translate(50%, 50%) scale(0.45);
+    transform: translate(-16%, -12%) scale(0.45);
   }
   60% {
-    transform: translate(50%, 50%) scale(0.45);
+    transform: translate(-16%, -12%) scale(0.45);
   }
   80% {
-    transform: translate(-13%, 0%) scale(0.45);
+    transform: translate(-34%, -29%) scale(0.45);
   }
   100% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @keyframes dot-2-move {
   0% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   20% {
-    transform: translate(-90%, 0%) scale(0.45);
+    transform: translate(-68%, -29%) scale(0.45);
   }
   40% {
-    transform: translate(-150%, 50%) scale(0.45);
+    transform: translate(-78%, -13%) scale(0.45);
   }
   60% {
-    transform: translate(-150%, 50%) scale(0.45);
+    transform: translate(-78%, -13%) scale(0.45);
   }
   80% {
-    transform: translate(-90%, 0%) scale(0.45);
+    transform: translate(-68%, -29%) scale(0.45);
   }
-  100% {
-    transform: translate(-50%, -27%) scale(1);
+  100%{
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @keyframes dot-3-move {
   0% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   20% {
     transform: translate(-50%, -70%) scale(0.45);
   }
   40% {
-    transform: translate(-50%, -150%) scale(0.45);
+    transform: translate(-50%, -90%) scale(0.45);
   }
   60% {
-    transform: translate(-50%, -150%) scale(0.45);
+    transform: translate(-50%, -90%) scale(0.45);
   }
   80% {
     transform: translate(-50%, -70%) scale(0.45);
   }
   100% {
-    transform: translate(-50%, -27%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -144,5 +144,18 @@ section:not(.index-section) {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }

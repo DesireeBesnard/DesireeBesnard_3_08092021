@@ -8,129 +8,129 @@
       opacity: 1;
       transform: translateY(0px);
     }
-  }
+}
 
   // Turning checkbox effect
-  @keyframes checkturn {
-    0% {
-      transform: rotate(0deg);
-    }
-    1% {
-      transform: rotate(90deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+@keyframes checkturn {
+  0% {
+    transform: rotate(0deg);
   }
+  1% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-  // Loading spinner animation
-  @keyframes loading-spinner {
-    0% {
-      visibility: hidden;
-    }
-    1%{
-      visibility: visible;
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden
-    }
+// Loading spinner animation
+@keyframes loading-spinner {
+  0% {
+    visibility: hidden;
   }
+  1%{
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden
+  }
+}
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    40% {
-      transform: rotate(0deg);
-    }
-    60% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
   
-  @keyframes dot-1-move {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    20% {
-      transform: translate(-34%, -29%) scale(0.45);
-    }
-    40% {
-      transform: translate(-16%, -12%) scale(0.45);
-    }
-    60% {
-      transform: translate(-16%, -12%) scale(0.45);
-    }
-    80% {
-      transform: translate(-34%, -29%) scale(0.45);
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1);
-    }
+@keyframes dot-1-move {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
   }
+  20% {
+    transform: translate(-34%, -29%) scale(0.45);
+  }
+  40% {
+    transform: translate(-16%, -12%) scale(0.45);
+  }
+  60% {
+    transform: translate(-16%, -12%) scale(0.45);
+  }
+  80% {
+    transform: translate(-34%, -29%) scale(0.45);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
   
-  @keyframes dot-2-move {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    20% {
-      transform: translate(-68%, -29%) scale(0.45);
-    }
-    40% {
-      transform: translate(-78%, -13%) scale(0.45);
-    }
-    60% {
-      transform: translate(-78%, -13%) scale(0.45);
-    }
-    80% {
-      transform: translate(-68%, -29%) scale(0.45);
-    }
-    100%{
-      transform: translate(-50%, -50%) scale(1);
-    }
+@keyframes dot-2-move {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
   }
+  20% {
+    transform: translate(-68%, -29%) scale(0.45);
+  }
+  40% {
+    transform: translate(-78%, -13%) scale(0.45);
+  }
+  60% {
+    transform: translate(-78%, -13%) scale(0.45);
+  }
+  80% {
+    transform: translate(-68%, -29%) scale(0.45);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
   
-  @keyframes dot-3-move {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    20% {
-      transform: translate(-50%, -70%) scale(0.45);
-    }
-    40% {
-      transform: translate(-50%, -90%) scale(0.45);
-    }
-    60% {
-      transform: translate(-50%, -90%) scale(0.45);
-    }
-    80% {
-      transform: translate(-50%, -70%) scale(0.45);
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1);
-    }
+@keyframes dot-3-move {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
   }
+  20% {
+    transform: translate(-50%, -70%) scale(0.45);
+  }
+  40% {
+    transform: translate(-50%, -90%) scale(0.45);
+  }
+  60% {
+    transform: translate(-50%, -90%) scale(0.45);
+  }
+  80% {
+    transform: translate(-50%, -70%) scale(0.45);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
   
-  @keyframes z-index {
-    0% {
-      z-index: 1;
-    }
-    33% {
-      z-index: 2;
-    }
-    66% {
-      z-index: 3;
-    }
-    100% {
-      z-index: 1;
-    }
+@keyframes z-index {
+  0% {
+    z-index: 1;
   }
+  33% {
+    z-index: 2;
+  }
+  66% {
+    z-index: 3;
+  }
+  100% {
+    z-index: 1;
+  }
+}
   

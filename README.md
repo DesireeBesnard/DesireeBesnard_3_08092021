@@ -57,11 +57,7 @@ The concept of Ohmyfood is to order meals online. Users should be able to compos
 - It must be responsive with a free layout on tablet and desktop.
 
 ### Links
-Mobile mockup (Home page): [Here](src/mockup/accueil.png)  
-Mobile mockup (La palette du goût): [Here](src/mockup/menu-lapalettedugout.png)   
-Mobile mockup (La note enchantée): [Here](src/mockup/menu-lanoteenchantee.png)  
-Mobile mockup (À la française): [Here](src/mockup/menu-alafrançaise.png)  
-Mobile mockup (Le délice des sens): [Here](src/mockup/menu-ledelicedessens.png)  
+Mobile mockup: [Home Page](src/mockup/accueil.png) [La palette du goût](src/mockup/menu-lapalettedugout.png) [La note enchantée](src/mockup/menu-lanoteenchantee.png) [(À la française](src/mockup/menu-alafrançaise.png) [Le délice des sens](src/mockup/menu-ledelicedessens.png)   
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_3_08092021/)  
 
 ## My process
@@ -78,8 +74,10 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_3_08092021/)
 #### Write better structured code and faster with Sass
 
 ##### Install sass (Linux)
-> sudo apt install nodejs
-> npm -g install sass
+```
+sudo apt install nodejs
+npm -g install sass
+``` 
 
 ##### 7-1 Sass Architecture
 ```
@@ -119,19 +117,78 @@ sass/
 ``` 
 
 ##### Improve code maintainability with Sass variables
+```
+$gray: #F6F6F6;
+background-color: $gray;
+``` 
 
 #### Create graphic effects
-##### Linear Gradient on svg
-##### CSS transition
-##### Create more complex animations with the @keyframes CSS rule
 
-#### Ensure the graphic consistency of a website (Media queries for tablets and desktop)
+##### Linear Gradient on svg
+```
+<svg viewBox="0 0 32 32">
+    <defs>
+        <linearGradient id="heart__gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop class="gradientstop1" offset="0%"/>
+            <stop class="gradientstop2" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#heart__gradient)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg>
+``` 
+
+##### Create more complex animations with the @keyframes CSS rule
+```
+@keyframes dot-1-move {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    20% {
+      transform: translate(-34%, -29%) scale(0.45);
+    }
+    40% {
+      transform: translate(-16%, -12%) scale(0.45);
+    }
+    60% {
+      transform: translate(-16%, -12%) scale(0.45);
+    }
+    80% {
+      transform: translate(-34%, -29%) scale(0.45);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes z-index {
+    0% {
+      z-index: 1;
+    }
+    33% {
+      z-index: 2;
+    }
+    66% {
+      z-index: 3;
+    }
+    100% {
+      z-index: 1;
+    }
+}
+
+animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
+``` 
+
+#### Ensure the graphic consistency of a website (using media queries for tablets and desktop)
 
 ### Continued development
-- Build the site using a framework such as React to create components and avoid redundancies (cards)
+- Use javascript for click-triggered animations (heart button animation and select a dish)
+- Add the possibility to choose a location
+- Add online reservation and menu composition functions 
 
 ### Useful ressources
-- 
+- [7-1 Sass Architecture](https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture) - This helped me understand the Git workflow, learn Markdown and document my projects
+- [Implementing Multiple Loading Spinners Made with Pure CSS and HTML](https://dev.to/fadinouh1/implementing-multiple-loading-spinners-made-with-pure-css-and-html-9p4) - Some inspiration for loading spinners
+- [Responsive, Mobile First](https://grafikart.fr/tutoriels/responsive-mobile-first-550) - A tutorial to understand the concept of mobile-first
 
 ## Authors
 - Website - [Désirée Besnard](https://github.com/DesireeBesnard)

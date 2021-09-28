@@ -17,10 +17,6 @@
       font-size: 1rem;
       @include box-shadow;
       font-weight: bold;
-
-      &__step:last-child {
-        background-color: #F5EDFF;
-      }
   
       // Step number
       span {

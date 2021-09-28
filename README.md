@@ -57,7 +57,7 @@ The concept of Ohmyfood is to order meals online. Users should be able to compos
 - It must be responsive with a free layout on tablet and desktop.
 
 ### Links
-Mobile mockup: [Home Page](src/mockup/accueil.png) [La palette du goût](src/mockup/menu-lapalettedugout.png) [La note enchantée](src/mockup/menu-lanoteenchantee.png) [(À la française](src/mockup/menu-alafrançaise.png) [Le délice des sens](src/mockup/menu-ledelicedessens.png)   
+Mobile mockup: [Home Page](src/mockup/accueil.png) | [La palette du goût](src/mockup/menu-lapalettedugout.png) | [La note enchantée](src/mockup/menu-lanoteenchantee.png) | [À la française](src/mockup/menu-alafrançaise.png) | [Le délice des sens](src/mockup/menu-ledelicedessens.png)   
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_3_08092021/)  
 
 ## My process

@@ -1,6 +1,6 @@
 # Ohmyfood - Online meal ordering website (Part 1)
 
-![Reservia project thumbnail](src/readmethumbnail.jpg)
+![Ohmyfood project thumbnail](src/images/readmethumbnail.jpg)
 
 The concept of Ohmyfood is to order meals online. Users should be able to compose their own menu and reduce their waiting time in restaurants because their menus are prepared in advance. This project is a two phases project. In the first place, the goal is to develop a site offering four restaurants menus. Secondly, the online reservation and menu composition functions will be implemented.
 

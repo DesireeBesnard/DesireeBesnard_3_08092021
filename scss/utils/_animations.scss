@@ -26,9 +26,6 @@
 // Loading spinner animation
 @keyframes loading-spinner {
   0% {
-    visibility: hidden;
-  }
-  1%{
     visibility: visible;
     opacity: 1;
   }

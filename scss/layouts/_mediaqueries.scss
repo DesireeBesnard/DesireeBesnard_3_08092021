@@ -1,5 +1,5 @@
+// tablets mediaqueries
 @media only screen and (min-width: 688px) and (max-width: 991.98px) {
-    
     .description__step {
         max-width: 50%;
     }
@@ -23,7 +23,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-
+    // Steps are put on same line on wider devices
     .index-section.description > div {
         display: flex;
         justify-content: space-between;
@@ -33,8 +33,6 @@
         width: 24%;
         max-width: 24%;
     }
-
-
 
     footer, ul {
         display: flex;

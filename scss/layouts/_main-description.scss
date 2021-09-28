@@ -1,41 +1,42 @@
-// Description section
-
+// Description section on the index
 .description {
-    padding-left: 4%;
-    padding-right: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
   
     &__step {
+      display: flex;
+      align-items: center;
+      background-color: $gray;
+      max-width: 76%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+      padding: 25px 26px;
+      border-radius: 20px;
+      position: relative;
+      font-size: 1rem;
+      @include box-shadow;
+      font-weight: bold;
+  
+      // Step number
+      span {
+        background-color: $primary;
+        width: 30px;
+        height: 30px;
         display: flex;
-    align-items: center;
-    background-color: $gray;
-    max-width: 76%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    padding: 25px 26px;
-    border-radius: 20px;
-    position: relative;
-    font-size: 1rem;
-    @include box-shadow;
-    font-weight: bold;
-  
-        span {
-            background-color: $primary;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            border-radius: 50%;
-            position: absolute;
-            left: -15px;
-        }
-  
-        i {
-            margin-right: 25px;
-            font-size: 1.5rem;
-        }
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: -15px;
+      }
+
+      // Step icon
+      i {
+          margin-right: 25px;
+          font-size: 1.5rem;
+      }
     }
   }
   

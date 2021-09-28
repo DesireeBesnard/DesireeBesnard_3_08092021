@@ -1,3 +1,4 @@
+// Loading spinner
 .spinner {
     position: absolute;
     width: 100%;
@@ -5,7 +6,7 @@
     background-color: white;
     z-index: 1;
     visibility: hidden;
-    animation: loading-spinner 3s forwards ease ;
+    animation: loading-spinner 3s forwards ease;
 
     &__container {
         position: absolute;

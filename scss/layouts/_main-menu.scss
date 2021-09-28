@@ -1,3 +1,4 @@
+// Restaurant menu
 .menu {
     padding-left: 4%;
     padding-right: 4%;
@@ -5,6 +6,7 @@
     border-radius: 20px 20px 0 0;
     margin-top: 14.5rem;
 
+    // Div containing the title and the like button
     > div:first-child {
         display: flex;
         align-items: center;
@@ -24,10 +26,29 @@
         font-weight: normal;
     }
 
+    // contains every dishes column (entries, dish and desserts)
     &__dishes {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
         grid-gap: 20px;
+    }
+
+    section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: 600ms ease-in-out forwards slideup;
+    
+        &:first-child {
+            animation-delay: 300ms;
+        }
+    
+        &:nth-child(2) {
+            animation-delay: 500ms;
+        }
+    
+        &:last-child {
+            animation-delay: 700ms;
+        }
     }
 
     .section-heading {
@@ -36,6 +57,7 @@
         position: relative;
     }
 
+    // Green title underline
     .section-heading:after {
         content:"";
         height: 3px;
@@ -46,6 +68,7 @@
         left: 0;
     }
 
+    // Contains the dish item + the checkbox
     &__dish {
         background-color: white;
         border-radius: 15px;
@@ -56,10 +79,12 @@
         overflow: hidden;
     }
 
+    // On hover the checkbox slides from the right
     &__dish:hover .menu__check {
         width: 70px;
     }
 
+    // It also turns from 90deg to 360deg
     &__dish:hover i {
         animation: 200ms ease-out 100ms forwards checkturn;
     }
@@ -72,8 +97,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: width 300ms ease-in-out;
         cursor: pointer;
+        transition: width 300ms ease-in-out;
     }
 }
 
@@ -107,24 +132,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
-
-.menu section {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: 600ms ease-in-out forwards slideup;
-
-    &:first-child {
-        animation-delay: 300ms;
-    }
-
-    &:nth-child(2) {
-        animation-delay: 500ms;
-    }
-
-    &:last-child {
-        animation-delay: 700ms;
-    }
 }
 
 .menu .header__btn {

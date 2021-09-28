@@ -1,4 +1,4 @@
-
+// The categories of dishes are gradually appearing
 @keyframes slideup {
     from {
       opacity: 0;
@@ -9,13 +9,47 @@
       transform: translateY(0px);
     }
   }
-  
+
+  // Turning checkbox effect
   @keyframes checkturn {
     0% {
       transform: rotate(0deg);
     }
     1% {
       transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  // Loading spinner animation
+  @keyframes loading-spinner {
+    0% {
+      visibility: hidden;
+    }
+    1%{
+      visibility: visible;
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(0deg);
+    }
+    60% {
+      transform: rotate(360deg);
     }
     100% {
       transform: rotate(360deg);
@@ -100,34 +134,3 @@
     }
   }
   
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    40% {
-      transform: rotate(0deg);
-    }
-    60% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes loading-spinner {
-    0% {
-      visibility: hidden;
-    }
-    1%{
-      visibility: visible;
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden
-    }
-  }

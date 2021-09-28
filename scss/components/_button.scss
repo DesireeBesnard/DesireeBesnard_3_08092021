@@ -1,3 +1,4 @@
+// main button of the website: used on the index and to order
 .header__btn {
     padding: 15px 25px;
     border-radius: 30px;
@@ -6,15 +7,17 @@
     color: white;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-    transition: all 200ms ease-in-out;
     @include box-shadow;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
+    }
 }
 
-.header__btn:hover {
-    opacity: 0.8;
-    box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
-}
-
+// "Like" button change color on hovering thanks to two svg overlapping
+// The outline button opacity decrease to reveal the fill button.
 .heart {
     background-color: transparent;
     border: none;
@@ -25,7 +28,8 @@
         overflow: visible;
     }
 
-    &--fill {
+    //Th
+    &--full {
         .gradientstop1 {
             stop-color: $primary;
         }
@@ -39,6 +43,7 @@
         }
     }
 
+// Heart shaped button on the index
     &--outline-white {
         stroke: black;
         fill: white;
@@ -52,6 +57,7 @@
         }
     }
 
+// Heart shaped button on the menu
     &--outline-gray {
         stroke: black;
         fill: $gray;

@@ -12,12 +12,14 @@ header {
         padding: 1rem 0;
     }
 
+    // div with location information
     + div {
         background-color: $grey;
         margin: 0;
         padding: 1rem 0;
         font-weight: bold;
 
+        // location icon
         span {
             margin-right: 15px;
         }
@@ -45,6 +47,7 @@ header {
     }
 }
 
+// Header on menu pages
 .backarrow {
     position: absolute;
     top: 23px;

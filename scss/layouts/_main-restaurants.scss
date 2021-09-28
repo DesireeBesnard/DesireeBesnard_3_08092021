@@ -1,18 +1,18 @@
-// Restaurants section
-
+// Restaurants section of index
 .restaurants {
     background-color: $gray;
   
     h2 {
         padding-left: 4%;
     }
-  }
+}
   
-  .cards {
+.cards {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(294px, 1fr) );
     grid-gap: 20px;
   
+    // contains a single restaurant card + the like button
     > div {
         position: relative;
     }
@@ -22,9 +22,9 @@
         right: 20px;
         bottom: 30px;
     }
-  }
+}
   
-  .card {
+.card {
     display: block;
     border-radius: 20px;
     position: relative;
@@ -53,6 +53,7 @@
         padding: 20px 25px 20px 15px;
         border-radius: 0 0 20px 20px;
   
+        // New tag
         span {
             color: $newtag;
             background-color: $mint;
@@ -61,10 +62,6 @@
             position: absolute;
             top: 15px;
             right: 15px;
-        }
-  
-        div:last-child {
-            margin: auto 0 auto auto;
         }
   
         p {

@@ -187,8 +187,9 @@ animation: dot-1-move 2s ease infinite, z-index 6s ease infinite;
 
 ### Useful ressources
 - [7-1 Sass Architecture](https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture) - This helped me understand the Git workflow, learn Markdown and document my projects
+- [SVG Gradients](https://la-cascade.io/les-degrades-svg/) - A short but complete explanation of the possibilities of linear gradient (french ressource)
 - [Implementing Multiple Loading Spinners Made with Pure CSS and HTML](https://dev.to/fadinouh1/implementing-multiple-loading-spinners-made-with-pure-css-and-html-9p4) - Some inspiration for loading spinners
-- [Responsive, Mobile First](https://grafikart.fr/tutoriels/responsive-mobile-first-550) - A tutorial to understand the concept of mobile-first
+- [Responsive, Mobile First](https://grafikart.fr/tutoriels/responsive-mobile-first-550) - A tutorial to understand the concept of mobile-first (french ressource)
 
 ## Authors
 - Website - [Désirée Besnard](https://github.com/DesireeBesnard)

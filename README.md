@@ -57,11 +57,11 @@ The concept of Ohmyfood is to order meals online. Users should be able to compos
 - It must be responsive with a free layout on tablet and desktop.
 
 ### Links
-Mobile mockup | Home page: [Here](src/mockup/accueil.png)  
-Mobile mockup | La palette du goût: [Here](src/mockup/menu-lapalettedugout.png)   
-Mobile mockup | La note enchantée: [Here](src/mockup/menu-lanoteenchantee.png)  
-Mobile mockup | À la française: [Here](src/mockup/menu-alafrançaise.png)  
-Mobile mockup | Le délice des sens: [Here](src/mockup/menu-ledelicedessens.png)  
+Mobile mockup (Home page): [Here](src/mockup/accueil.png)  
+Mobile mockup (La palette du goût): [Here](src/mockup/menu-lapalettedugout.png)   
+Mobile mockup (La note enchantée): [Here](src/mockup/menu-lanoteenchantee.png)  
+Mobile mockup (À la française): [Here](src/mockup/menu-alafrançaise.png)  
+Mobile mockup (Le délice des sens): [Here](src/mockup/menu-ledelicedessens.png)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_3_08092021/)  
 
 ## My process
@@ -75,7 +75,57 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_3_08092021/)
 
 ### What I learned
 
-#### Implement a responsive interface with a mobile first workflow (Media queries for tablets and desktop)
+#### Write better structured code and faster with Sass
+
+##### Install sass (Linux)
+> sudo apt install nodejs
+> npm -g install sass
+
+##### 7-1 Sass Architecture
+```
+sass/
+|
+|– utils/
+|   |– _variables.scss           # Sass Variables
+|   |– _mixins.scss              # Sass Mixins
+|   |– _animations.scss          # Keyframes Animation
+|
+|– base/
+|   |– _base.scss                # Reset/normalize
+|   |– _typography.scss          # Typography rules
+|
+|– layouts/
+|   |– _header.scss              # Header
+|   |– _main-description.scss    # Presentation of the company
+|   |– _main-restaurants.scss    # Restaurant cards layout
+|   |– _main-menu.scss           # Menu layout
+|   |– _footer.scss              # Footer
+|   |– _mediaqueries.scss        # Media queries
+|
+|– components/
+|   |– _button.scss              # Button
+|   |– _spinner.scss             # Loading spinner
+|
+ – main.scss                     # Main Sass input file
+```
+
+##### Mixins
+```
+@mixin box-shadow {
+    box-shadow: 1px 2px 15px 0px rgb(0 0 0 / 15%);
+}
+//The mixin is included into the current context using the @include at-rule
+@include box-shadow;
+``` 
+
+##### Improve code maintainability with Sass variables
+
+#### Create graphic effects
+##### Linear Gradient on svg
+##### CSS transition
+##### Create more complex animations with the @keyframes CSS rule
+
+#### Ensure the graphic consistency of a website (Media queries for tablets and desktop)
 
 ### Continued development
 - Build the site using a framework such as React to create components and avoid redundancies (cards)

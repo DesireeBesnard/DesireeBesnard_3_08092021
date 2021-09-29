@@ -17,8 +17,9 @@
       font-size: 1rem;
       @include box-shadow;
       font-weight: bold;
+      transition: background-color 150ms ease-in-out;
 
-      &:last-child {
+      &:hover {
         background-color: $lilac;
       }
   

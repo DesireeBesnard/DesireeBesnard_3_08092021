@@ -245,9 +245,10 @@ header {
   font-size: 1rem;
   box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
   font-weight: bold;
+  transition: background-color 150ms ease-in-out;
 }
-.description__step:last-child {
-  background-color: #F5EDFF;
+.description__step:hover {
+  background-color: #E4D2E4;
 }
 .description__step span {
   background-color: #9356DC;
